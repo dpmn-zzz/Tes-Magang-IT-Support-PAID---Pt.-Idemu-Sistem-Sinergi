@@ -1,0 +1,36 @@
+1. Meng ganti Alamat Mahasiswa dengan NIM '123456'
+UPDATE mahasiswa
+SET alamat = 'Jl. Raya No.5'
+WHERE nim = '123456';
+
+2. Menampilkan mahasiswa dengan jurusan Teknik Informatika dan nama dosen pembimbingnya
+SELECT 
+    mahasiswa.nim, 
+    mahasiswa.nama, 
+    mahasiswa.jurusan, 
+    matakuliah.dosen_pengajar 
+FROM mahasiswa 
+JOIN matakuliah 
+ON mahasiswa.nim = matakuliah.nim 
+WHERE mahasiswa.jurusan = 'Teknik Informatika';
+
+3. Menampilkan Mahasiswa umur tertua dengan limit 5
+SELECT 
+    nama, 
+    umur 
+FROM mahasiswa 
+ORDER BY umur DESC 
+LIMIT 5;
+
+4. Menampilkan nama, mata kuliah, dan nilai yg di peroleh dengan nilai > 70
+
+SELECT 
+    mahasiswa.nama, 
+    matakuliah.mata_kuliah, 
+    matakuliah.nilai 
+FROM mahasiswa 
+JOIN matakuliah 
+ON mahasiswa.nim = matakuliah.nim 
+WHERE matakuliah.nilai > 70;
+
+

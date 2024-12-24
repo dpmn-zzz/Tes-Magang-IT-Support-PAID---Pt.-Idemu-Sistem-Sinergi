@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #f3f4f7, #ffffff);
+}
+/* Styling untuk header */
+header {
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+  border: solid #242a30;
+}
+
+/* Styling untuk kontainer logo dan H1 */
+.header-top {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Styling logo bulat */
+.header-top img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* Membuat logo menjadi bulat */
+  border: 2px solid #004080;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling untuk H1 */
+.header-top h1 {
+  color: #004080;
+  font-size: 36px;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  align-items: center;
+}
+
+
+/* Styling untuk kontainer navigasi dan search */
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #cccccc;
+  padding-top: 10px;
+}
+
+/* Styling navigasi */
+.header-bottom nav {
+  display: flex;
+  gap: 15px;
+}
+
+.header-bottom nav a {
+  text-decoration: none;
+  color: #004080;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.header-bottom nav a:hover {
+  background-color: #004080;
+  color: #ffffff;
+}
+
+/* Styling untuk search bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 5px 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.search-bar button {
+  padding: 5px 15px;
+  background-color: #004080;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #003366;
+}
+
+
+.logo {
+  font-size: px;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav ul li {
+  display: inline;
+}
+
+.nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cart button {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart button:hover {
+  background-color: #e65c00;
+}
+
+.hero {
+  text-align: center;
+  background: url('Bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 50px 20px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.search-container select,
+.search-container button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  background-color: #004080;
+  color: white;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #003060;
+}
+
+.featured-products {
+  text-align: center;
+  padding: 50px 20px;
+}
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-border {
+  background-color: #ffffff;
+  padding: 20px;
+  border: 2px solid #004080;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px; /* Lebar tetap */
+  height: 350px; /* Tinggi tetap */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Agar tombol tetap di bagian bawah */
+}
+
+.product-border img {
+  max-width: 100%;
+  height: 150px; /* Tinggi gambar tetap untuk konsistensi */
+  object-fit: contain; /* Menjaga proporsi gambar */
+  margin-bottom: 15px;
+}
+
+.product-border h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-border p {
+  font-size: 16px;
+  color: #333;
+}
+
+.product-border button {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.product-border button:hover {
+  background-color: #003060;
+}
+
+
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
